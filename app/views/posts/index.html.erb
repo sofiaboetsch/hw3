@@ -1,0 +1,12 @@
+<h1>Atacama</h1>
+<ul>
+<% for posts in @post%>
+    <li>
+    <a href="/post/<%=post["title"]%>"><%=place["title"]%></a>
+    </li>
+<%end%>
+</ul>
+
+<p>
+    <a href="/posts/new">Create New Post</a>
+</p>
