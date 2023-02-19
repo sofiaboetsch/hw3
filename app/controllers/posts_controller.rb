@@ -9,12 +9,12 @@ class PostsController < ApplicationController
     
     def create
             @post = Post.new
+            @place.find_by ({"id=params[]"})
             @post ["title"] = params["post"]["title"]
             @post ["description"] = params["post"]["description"]
             @post.save
             redirect_to "/posts" 
     end
-    
 
 
 end
