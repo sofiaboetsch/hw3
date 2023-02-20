@@ -2,16 +2,16 @@
 
 <ul>
 <% for post in @posts%>
-<p> <%= post ["title"]%></p>
-<p> <%= post ["description"]%></p>
+<p><strong><%= post["title"] %></strong></p>
 <p> <%= post ["posted_on"]%></p>
+<p> <%= post ["description"]%></p>
 <%end%>
 </ul>
 
 <p>
-    <a href="/posts/new?place_id=<%=@place["id"]%>">Create New post for<%= @place["name"]%></a>
+    <a href="/posts/new?place_id=<%=@place["id"]%>">Create New Post for <%= @place["name"]%></a>
 </p>
 
 <p>
-<a href="/places">"Back to all places</a>
+<a href="/places">Back to all places</a>
 </p>
